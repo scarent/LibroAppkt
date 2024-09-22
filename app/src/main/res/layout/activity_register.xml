@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="66dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginBottom="38dp"
+        android:text="LibroApp"
+        app:layout_constraintBottom_toTopOf="@+id/usuarioRegistro"
+        app:layout_constraintEnd_toEndOf="@+id/usuarioRegistro"
+        app:layout_constraintStart_toStartOf="@+id/usuarioRegistro"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/usuarioRegistro"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="64dp"
+        android:hint="Ingresa tu usuario"
+        android:padding="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/correoRegistro"
+        app:layout_constraintEnd_toEndOf="@+id/numeroRegistro"
+        app:layout_constraintStart_toStartOf="@+id/correoRegistro"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/correoRegistro"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="40dp"
+        android:hint="Ingresa tu correo electrónico"
+        android:padding="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/numeroRegistro"
+        app:layout_constraintEnd_toEndOf="@+id/contrasenaRegistro"
+        app:layout_constraintStart_toStartOf="@+id/contrasenaRegistro"
+        app:layout_constraintTop_toBottomOf="@+id/usuarioRegistro" />
+
+    <EditText
+        android:id="@+id/contrasenaRegistro"
+        android:layout_width="254dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="49dp"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numeroRegistro" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="230dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="183dp"
+        android:text="Registrarse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contrasenaRegistro" />
+
+    <EditText
+        android:id="@+id/numeroRegistro"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="34dp"
+        android:ems="10"
+        android:hint="Ingresa tu numero de celular"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/contrasenaRegistro"
+        app:layout_constraintEnd_toEndOf="@+id/correoRegistro"
+        app:layout_constraintStart_toStartOf="@+id/correoRegistro"
+        app:layout_constraintTop_toBottomOf="@+id/correoRegistro" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_mis_libros"
+        android:title="Mis libros"
+        android:icon="@drawable/ic_books"/>
+    <item
+        android:id="@+id/nav_buscar"
+        android:title="Buscar"
+        android:icon="@drawable/ic_search"/>
+    <item
+        android:id="@+id/nav_catalogo"
+        android:title="Catálogo"
+        android:icon="@drawable/ic_catalog"/>
+    <item
+        android:id="@+id/nav_wishlist"
+        android:title="Wishlist"
+        android:icon="@drawable/ic_wishlist"/>
+</menu>
+
