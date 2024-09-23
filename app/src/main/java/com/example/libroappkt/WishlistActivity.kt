@@ -19,7 +19,7 @@ class WishlistActivity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_buscar -> {
-                    // barra de búsqueda
+                    // siguiente barra de busqueda
                     true
                 }
                 R.id.nav_catalogo -> {
@@ -27,7 +27,7 @@ class WishlistActivity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_wishlist -> {
-                    // No es necesario reiniciar la misma actividad
+                    // No es necesario reiniciar la misma actividad en esta parte
                     true
                 }
                 else -> false
