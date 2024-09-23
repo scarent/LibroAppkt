@@ -6,11 +6,6 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-    <!-- Título de la sección Mis libros -->
-
-    <!-- Texto que lleva al catálogo -->
-
-    <!-- Bottom Navigation View -->
 
     <TextView
         android:id="@+id/tvMisLibros"

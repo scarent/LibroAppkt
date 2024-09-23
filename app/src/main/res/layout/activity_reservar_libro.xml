@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-    <!-- Título del libro -->
+
     <TextView
         android:id="@+id/textoTitulo"
         android:layout_width="wrap_content"
@@ -17,7 +17,7 @@
         android:layout_marginTop="32dp"
         android:text="Título del libro" />
 
-    <!-- Autor del libro -->
+
     <TextView
         android:id="@+id/textoAutor"
         android:layout_width="wrap_content"
@@ -28,7 +28,7 @@
         android:layout_marginTop="16dp"
         android:text="Autor del libro" />
 
-    <!-- Precio del libro -->
+
     <TextView
         android:id="@+id/textoPrecio"
         android:layout_width="wrap_content"
@@ -39,7 +39,7 @@
         android:layout_marginTop="16dp"
         android:text="Precio del libro" />
 
-    <!-- Bottom Navigation View -->
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"

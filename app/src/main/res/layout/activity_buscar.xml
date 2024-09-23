@@ -10,5 +10,5 @@
         android:layout_height="wrap_content"
         android:text="Buscar Libros" />
 
-    <!-- Agrega aquí otros elementos UI como EditText, Button, etc. -->
+
 </LinearLayout>

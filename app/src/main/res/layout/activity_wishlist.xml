@@ -10,5 +10,5 @@
         android:layout_height="wrap_content"
         android:text="Wishlist" />
 
-    <!-- Agrega aquí otros elementos UI como ListView, RecyclerView, etc. -->
+
 </LinearLayout>

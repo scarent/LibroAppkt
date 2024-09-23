@@ -18,7 +18,7 @@ class FiltroActivity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_buscar -> {
-                    // Código para abrir barra de búsqueda
+                    // barra de búsqueda
                     true
                 }
                 R.id.nav_catalogo -> {

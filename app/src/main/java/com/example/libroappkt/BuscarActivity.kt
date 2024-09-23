@@ -8,6 +8,6 @@ class BuscarActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_buscar)
 
-        // Aquí puedes implementar la lógica para la búsqueda
+
     }
 }

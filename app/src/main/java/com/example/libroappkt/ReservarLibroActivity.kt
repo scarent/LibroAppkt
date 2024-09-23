@@ -14,7 +14,7 @@ class ReservarLibroActivity : AppCompatActivity() {
         // Obtener el libro de la intención
         val libro = intent.getSerializableExtra("libro") as Libro
 
-        // Mostrar la información del libro
+        //  información del libro
         findViewById<TextView>(R.id.textoTitulo).text = libro.titulo
         findViewById<TextView>(R.id.textoAutor).text = libro.autor
         findViewById<TextView>(R.id.textoPrecio).text = libro.precio
@@ -28,7 +28,7 @@ class ReservarLibroActivity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_buscar -> {
-                    // Código para abrir barra de búsqueda
+                    //  barra de búsqueda
                     true
                 }
                 R.id.nav_catalogo -> {

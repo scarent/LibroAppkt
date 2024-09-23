@@ -14,7 +14,7 @@ class CatalogoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_catalogo)
 
-        // Configuración del RecyclerView
+        //  RecyclerView
         val libros = listOf(
             Libro("Cien años de soledad", "Gabriel Garcia Marquez", "$10.000"),
             Libro("La naranja mecanica", "Anthony Burgess", "$11.990"),
@@ -38,8 +38,8 @@ class CatalogoActivity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_buscar -> {
-                    // Aquí puedes abrir una nueva actividad para la búsqueda
-                    startActivity(Intent(this, BuscarActivity::class.java)) // Asegúrate de que exista esta actividad
+                    //
+                    startActivity(Intent(this, BuscarActivity::class.java))
                     true
                 }
                 R.id.nav_wishlist -> {
