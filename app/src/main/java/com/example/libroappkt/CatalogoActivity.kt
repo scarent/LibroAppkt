@@ -16,9 +16,9 @@ class CatalogoActivity : AppCompatActivity() {
 
         //  RecyclerView
         val libros = listOf(
-            Libro("Cien años de soledad", "Gabriel Garcia Marquez", "$10.000"),
-            Libro("La naranja mecanica", "Anthony Burgess", "$11.990"),
-            Libro("1984", "George Orwell", "$15.000")
+            Libro("Cien años de soledad", "Gabriel Garcia Marquez", "$10.000", R.drawable.cien),
+            Libro("La naranja mecanica", "Anthony Burgess", "$11.990", R.drawable.naranja),
+            Libro("1984", "George Orwell", "$15.000", R.drawable.letras)
         )
 
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerLibros)
