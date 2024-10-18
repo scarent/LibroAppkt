@@ -1,4 +1,4 @@
-package com.example.libroappkt // <-- Asegúrate de incluir esto al principio
+package com.example.libroappkt
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -31,11 +31,9 @@ class BuscarFragment : Fragment() {
         buttonBuscar = view.findViewById(R.id.buttonBuscar)
         recyclerView = view.findViewById(R.id.recyclerViewResultados)
 
-        // Configuración del RecyclerView
         recyclerView.layoutManager = LinearLayoutManager(activity)
 
-        // Pasamos una función vacía para el clic en el libro
-        adaptadorLibros = AdaptadorLibros(listaLibros) { /* función vacía */ }
+        adaptadorLibros = AdaptadorLibros(listaLibros) { }
         recyclerView.adapter = adaptadorLibros
 
         buttonBuscar.setOnClickListener {
@@ -47,7 +45,7 @@ class BuscarFragment : Fragment() {
     }
 
     private fun buscarLibros(query: String) {
-        // Aquí filtras los libros por el criterio de búsqueda
+
         val librosFiltrados = listaLibros.filter { libro ->
             libro.titulo.contains(query, ignoreCase = true)
         }
