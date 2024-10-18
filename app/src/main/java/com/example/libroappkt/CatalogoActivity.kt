@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.example.libroappkt.BuscarActivity
 
 class CatalogoActivity : AppCompatActivity() {
 
@@ -14,13 +13,14 @@ class CatalogoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_catalogo)
 
-        //  RecyclerView
+        // Lista de libros
         val libros = listOf(
             Libro("Cien años de soledad", "Gabriel Garcia Marquez", "$10.000", R.drawable.cien),
             Libro("La naranja mecanica", "Anthony Burgess", "$11.990", R.drawable.naranja),
             Libro("1984", "George Orwell", "$15.000", R.drawable.letras)
         )
 
+        // RecyclerView
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerLibros)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = AdaptadorLibros(libros) { libro ->
@@ -29,7 +29,7 @@ class CatalogoActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // Configuración de la Bottom Bar
+        // Config bottom
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
@@ -38,7 +38,6 @@ class CatalogoActivity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_buscar -> {
-                    //
                     startActivity(Intent(this, BuscarActivity::class.java))
                     true
                 }
@@ -51,10 +50,5 @@ class CatalogoActivity : AppCompatActivity() {
         }
     }
 }
-
-
-
-
-
 
 

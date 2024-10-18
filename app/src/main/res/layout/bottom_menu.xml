@@ -1,17 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/itemMisLibros"
-        android:title="Mis libros"
-        android:icon="@drawable/ic_books"/>
+        android:id="@+id/itemCatalogo"
+        android:title="Catálogo"
+        android:icon="@drawable/ic_catalog"/>
     <item
         android:id="@+id/itemBuscar"
         android:title="Buscar"
         android:icon="@drawable/ic_search"/>
     <item
-        android:id="@+id/itemCatalogo"
-        android:title="Catálogo"
-        android:icon="@drawable/ic_catalog"/>
+        android:id="@+id/itemMisLibros"
+        android:title="Mis Libros"
+        android:icon="@drawable/ic_books"/>
     <item
         android:id="@+id/itemWishlist"
         android:title="Wishlist"
